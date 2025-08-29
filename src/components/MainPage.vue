@@ -7,42 +7,72 @@
 </script>
 
 <template>
-    <LogoEl />
-    <NavPage class="nav_page"/>
-    <SitePage />
-    <FooterInfo />
+<div id="main_page">
+  <header>
+    <div>
+      <LogoEl />
+    </div>
+  </header>
 
-    <section>
-        <!-- <div class="grid">Grid-контейнер</div>
-        <div class="grid-cols-3">Сетка с 3 колонками
-            <div class="bg-amber-600">Элемент в 3 колонках</div>
-            <div class="bg-blue-400">Элемент в 3 колонках</div>
-            <div class="bg-green-400">Элемент в 3 колонках</div>
+  <nav>
+    <div>
+      <NavPage />
+    </div>
+  </nav>
 
-        </div>
-        <div class="grid-cols-12">Сетка с 12 колонками
-            <div class="grid col-span-6 bg-amber-600">Элемент в 6 колонках</div>
-            <div class="col-span-6 bg-blue-400">Элемент в 6 колонках</div>
+  <main>
+    <!-- <div>This is the main content.</div> -->
+    <!-- <section>
+      <div>This is a section.</div>
+    </section> -->
+    <article>
+      <div>
+        <SitePage />
+      </div>
+    </article>
+    <!-- <aside>
+      <div>This is an aside.</div>
+    </aside> -->
+  </main>
+  
+  <footer>
+    <div>
+      <FooterInfo />
+    </div>
+  </footer>
 
-        </div>
-        <div class="grid-rows-4">Сетка с 4 строками</div> -->
-    </section>
+</div>
 </template>
 
 <style>
-/* .nav_page {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 0px;
-    font-size: 20px;
-    @apply text-center;
-    /* @media (max-width: 320px) {
-    
-        font-size: 1rem;
-        font-weight: 300;
-        margin: 0;
-        color: #ffffff;
-    } */
-/* } 
-*/
+header {
+  background-color: var(--color-blue-900);
+  width: 100%;
+  & {
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+  }
+}
+
+nav {
+  width: 100%;
+  & {
+    @apply
+    flex
+    flex-col
+    justify-center
+    items-center
+  }
+}
+
+#main_page {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
 </style>

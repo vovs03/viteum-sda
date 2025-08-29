@@ -2,6 +2,7 @@
     import AddressInfo from './AddressEl.vue';
     import { onMounted } from 'vue';
     import SabbathShedule from './SabbathShedule.vue';
+    import HelloWorld from './HelloWorld.vue';
 
     
 {
@@ -21,11 +22,12 @@
     <AddressInfo class="col-1 w-[15%]"/>
 
     <!-- Central block on Desktop :-->
-     <main>
+     <main >
+        <!-- bg-lime-300-->
         <div class="flex-row flex-2 h-155">
-            <h1 class="bg-lime-300"> Site Page!</h1>
+            <h1> Site Page!</h1>
             <div>
-                Hello words!
+                <HelloWorld />
             </div>
             <!-- Carousel Slider -->
             <div>
